@@ -118,6 +118,7 @@ public class CustomerServlet extends HttpServlet {
                 deleteCustomer(request, response);
                 break;
             default:
+                viewCustomers(request, response);
                 break;
         }
     }
