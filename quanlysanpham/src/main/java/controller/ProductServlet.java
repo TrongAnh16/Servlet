@@ -50,7 +50,7 @@ public class ProductServlet extends HttpServlet {
             request.setAttribute("product", product);
             dispatcher = request.getRequestDispatcher("/product/view.jsp");
         }
-        try { 
+        try {
             dispatcher.forward(request, response);
         }catch (ServletException e) {
             e.printStackTrace();
