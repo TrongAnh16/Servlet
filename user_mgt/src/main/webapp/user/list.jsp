@@ -6,6 +6,7 @@
 <head>
     <title>User Management Application</title>
 </head>
+
 <body>
 <center>
     <h1>User Management</h1>
@@ -35,6 +36,26 @@
                 </td>
             </tr>
         </c:forEach>
+        <tr>
+            <form action="/users?action=search" method="get">
+                <td colspan="2" style="text-align: center">Search User</td>
+                <td colspan="2">
+                    <input name="action"  value="search" hidden>
+                    <input type="text" name="q" style="width: 100%" />
+                </td>
+
+                <td>
+                    <input type="submit" value="Search" />
+                </td>
+            </form>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align: center">
+              <a href="/users?action=order">
+                  <button type="button" class="btn btn-success">OrderByNameASC</button>
+              </a>
+          </td>
+        </tr>
     </table>
 </div>
 </body>
