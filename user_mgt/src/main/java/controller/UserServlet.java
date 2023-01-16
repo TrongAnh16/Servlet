@@ -27,7 +27,7 @@ public class UserServlet extends HttpServlet {
         if (action == null) {
             action = "";
         }
-        switch (action) {
+            switch (action) {
             case "create":
                 showNewForm(request, response);
                 break;
