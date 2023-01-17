@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="home">Shoes</a>
+    <a class="navbar-brand" href="home">AShop Shoes</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -57,6 +57,6 @@
 <section class="jumbotron text-center bgc">
   <div class="container">
     <h1 class="jumbotron-heading">Siêu thị giày chất lượng cao</h1>
-    <p class="lead mb-0 text-white">Uy tín tạo nên thương hiệu với hơn 10 năm cung cấp các sản phẩm giày chất lượng tốt nhất</p>
+    <p class="lead mb-0 text-white">Uy tín tạo nên thương hiệu với hơn 10 năm cung cấp các sản phẩm giày nhập khẩu chất lượng cao</p>
   </div>
 </section>

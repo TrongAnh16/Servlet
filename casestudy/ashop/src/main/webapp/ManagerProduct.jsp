@@ -30,7 +30,19 @@
             }
         </style>
     <body>
-    <jsp:include page="Menu.jsp"></jsp:include>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="home">Home</a></li>
+                        <li class="breadcrumb-item"><a href="home">All Product</a></li>
+                        <%--                    <li class="breadcrumb-item active" aria-current="#">Sub-category</li>--%>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
         <div class="container">
             <div class="table-wrapper">
                 <div class="table-title">
@@ -77,7 +89,8 @@
                                 <td>${o.price} $</td>
                                 <td>
                                     <a href="loadProduct?pid=${o.id}"  class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                    <a href="delete?pid=${o.id}" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+<%--                                    <a href="delete?pid=${o.id}" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>--%>
+                                    <a href="#" onclick = "showMess(${o.id})" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -203,7 +216,12 @@
 <%--        </div>--%>
         <script src="js/manager.js" type="text/javascript"></script>
         <script>
-
+            function showMess(id) {
+                var option = confirm("Are you sure you want to delete this?");
+                if (option === true) {
+                    window.location.href = 'delete?pid='+id;
+                }
+            }
         </script>
     </body>
 </html>

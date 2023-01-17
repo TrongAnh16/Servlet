@@ -23,14 +23,16 @@
         </style>
     <body>
         <div class="container">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h2>Edit <b>Product</b></h2>
-                        </div>
-                        <div class="col-sm-6">
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="home">Home</a></li>
+                                <li class="breadcrumb-item"><a href="home">All Product</a></li>
+                                <%--                    <li class="breadcrumb-item active" aria-current="#">Sub-category</li>--%>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
